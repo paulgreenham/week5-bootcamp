@@ -9,11 +9,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // Mongoose setup
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/peopleDB', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/booksDB', { useNewUrlParser: true })
 
 app.use('/', api)
 
-const port = 4200
+const port = 2326
 app.listen(port, function () {
     console.log(`Running on port ${port}`)
 })
